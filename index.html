@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-title">
+                <h1 id="app-name">Weather App</h1>
+            </div>
+            <div class="toggle-container">
+                <div class="language-toggle">
+                    <button id="en-btn" class="active">English</button>
+                    <button id="hi-btn">हिंदी</button>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <div class="day-selector">
+                    <select id="day-select">
+                        <option value="0">Sunday</option>
+                        <option value="1">Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thursday</option>
+                        <option value="5">Friday</option>
+                        <option value="6">Saturday</option>
+                    </select>
+                </div>
+                <div class="location-search">
+                    <input type="text" id="location-input" placeholder="Enter city name">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="weather-container">
+                <div class="weather-card">
+                    <div class="weather-info">
+                        <h2 id="location">Location</h2>
+                        <p id="date">Date</p>
+                        <div class="weather-icon">
+                            <img id="weather-icon" src="" alt="Weather Icon">
+                        </div>
+                        <h3 id="temperature">--°C</h3>
+                        <p id="weather-description">Weather Description</p>
+                        <div class="weather-details">
+                            <div class="detail">
+                                <i class="fas fa-wind"></i>
+                                <span id="wind">-- km/h</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-tint"></i>
+                                <span id="humidity">--%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footer-text">Created with ❤️ | Weather data from WeatherAPI</p>
+        </footer>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
