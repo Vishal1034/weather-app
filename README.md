@@ -55,4 +55,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - Weather data provided by [WeatherAPI](https://www.weatherapi.com/)
 - Icons from [Font Awesome](https://fontawesome.com/)
-- Fonts from [Google Fonts](https://fonts.google.com/) 
+- Fonts from [Google Fonts](https://fonts.google.com/)
